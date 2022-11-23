@@ -1,0 +1,16 @@
+{
+    "name": "meow_code_lib",
+    "version": "0.1.1",
+    "description": "Extension for Meowbit x code lib",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "edge-connector": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "public": true,
+    "preferredEditor": "vscode"
+}

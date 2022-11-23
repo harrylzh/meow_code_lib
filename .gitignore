@@ -7,5 +7,4 @@ pxt_modules
 _site
 *.db
 *.tgz
-.header.json
 .simstate.json
