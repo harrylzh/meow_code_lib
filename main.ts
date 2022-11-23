@@ -7,7 +7,7 @@ load dependency
 //% color="#31C7D5" weight=10 icon="\uf1e6"
 namespace CodeLib {
 
-    //% blockId=_LedBlink block="LedÉÁË¸"
+    //% blockId=_LedBlink block="Ledé—ªçƒ"
     //% weight=100
     export function LedBlink () {
         pins.LED.digitalWrite(true)
