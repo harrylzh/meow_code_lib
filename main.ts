@@ -5,7 +5,16 @@ load dependency
 */
 
 //% color="#31C7D5" weight=10 icon="\uf1e6"
-namespace iobit {
+namespace CodeLib {
+
+    //% blockId=_LedBlink block="Led…¡À∏"
+    //% weight=100
+    export function LedBlink () {
+        pins.LED.digitalWrite(true)
+        pause(1000)
+        pins.LED.digitalWrite(false)
+        pause(1000)
+    }
 
     //% blockId=_digiwrite block="DWrite|pin %pin|%value"
     //% weight=100
