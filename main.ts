@@ -7,7 +7,20 @@ load dependency
 //% color="#31C7D5" weight=10 icon="\uf1e6"
 namespace CodeLib {
 
-    //% blockId=_LedBlink block="Led闪烁"
+
+    let sBitLed: light.NeoPixelStrip = null
+
+    //% blockId=_sBitLedObj block="super板载LED"
+    //% weight=100
+    export function sBitLedObj () {
+        if (!(sBitLed)) {
+            sBitLed = light.createStrip(pins.P12, 4)
+        }
+        return sBitLed
+    }
+
+
+    //% blockId=_LedBlink block="Ledb闪烁"
     //% weight=100
     export function LedBlink () {
         pins.LED.digitalWrite(true)
